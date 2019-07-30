@@ -8,4 +8,5 @@ dependencies {
     // Describe plugin native Android dependencies like
 	// implementation "groupName:pluginName:ver" 
     // EXAMPLE: implementation "com.facebook.fresco:fresco:0.9.0+"
+    implementation 'com.savvi.datepicker:rangepicker:1.3.0'
 }

@@ -1,5 +1,4 @@
-import { DateRange } from 'nativescript-date-range';
-console.log(new DateRange().message);
+
 import { Component } from "@angular/core";
 
 @Component({
