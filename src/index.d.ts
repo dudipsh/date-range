@@ -9,6 +9,7 @@ export declare class DateRange extends Common {
     nativeViewProtected: any;
     calendarView: any;
     createNativeView(): any;
-    getSelectedValue(): any;
+    public getSelectedValue(): any;
     initNativeView(): void;
+    _emit(event);
 }

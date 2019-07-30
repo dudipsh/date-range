@@ -5,7 +5,9 @@ declare var Directive;
     selector: "dateRange"
 })
 export class DateRangeDirective  {
-
+    public getSelectedValue() {
+        return 'lalala';
+    }
 }
 
 

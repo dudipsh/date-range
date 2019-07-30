@@ -1,19 +1,21 @@
 //import { Component } from "@angular/core";
 import {Common} from "../date-range.common";
 
-declare var Component;
+// declare var Component;
+
+// @ts-ignore
 @Component({
     selector: "date-range-component",
     template: `
         <date-range prop1="value1"></date-range>
     `
 })
-export class DateRangeComponent extends Common  {
+export class DateRangeComponent  {
     constructor() {
-        super();
-        console.log('RUN!!')
+        console.log('RUN!!');
+    }
+    public getSelectedValue() {
+        return 'lalala';
     }
 }
 
-
-export const COMPONENTS = [DateRangeComponent];

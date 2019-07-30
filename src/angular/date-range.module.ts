@@ -1,24 +1,19 @@
 // import { NgModule } from "@angular/core";
 // import { registerElement } from "nativescript-angular/element-registry";
-import {DIRECTIVES} from "./date-range.directive";
 
-declare var NgModule;
-declare var registerElement;
-import {COMPONENTS} from "./date-range.component";
-import {Common} from "../date-range.common";
-
+import { DateRangeComponent} from "./date-range.component";
+import { NgModule } from "@angular/core";
 
 @NgModule({
     declarations: [
-        COMPONENTS,
-        DIRECTIVES
-    ],
+        DateRangeComponent,
+     ],
     exports: [
-        COMPONENTS,
-        DIRECTIVES
-    ],
+        DateRangeComponent,
+     ],
 })
-export class DateRangeModule extends Common { }
+export class DateRangeModule  { }
 
+// @ts-ignore
 registerElement("DateRange", () => require("../").DateRange);
 
