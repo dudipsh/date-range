@@ -1,0 +1,14 @@
+.date-range-calendar-container {
+}
+
+.date-range-calendar-container  .oval {
+  margin: 22px;
+  border-width: 1px;
+  border-radius: 50%;
+  z-index: 0;
+}
+.date-range-calendar-container .text-title {
+  color: #959dad;
+  text-align: center;
+  margin-top: 20%;
+}
