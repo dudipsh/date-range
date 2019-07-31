@@ -4,11 +4,6 @@
 
 <StackLayout >
 
-    <!-- Add your page content here -->
-
-<!--    <Button text="asd" (tap)="test($event)"></Button>-->
-<!--       <DateRange #elm > </DateRange>-->
-<!--    <Date-Range #elm></Date-Range>-->
 
 </StackLayout>
-<date-range-component></date-range-component>
+<date-range-component (onSelectedDate)="test($event)"></date-range-component>

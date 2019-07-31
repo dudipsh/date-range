@@ -1,7 +1,6 @@
 import {registerElement} from 'nativescript-angular/element-registry';
-import {Component, OnInit, ViewChild, NgModule} from "@angular/core";
+import {Component, OnInit, ViewChild, NgModule,  EventEmitter, Output} from "@angular/core";
 import {DateRange} from "../src";
-import {View} from "tns-core-modules/ui/core/view";
 registerElement("DateRange", () => require("../src").DateRange);
 
 @Component({
@@ -10,7 +9,7 @@ registerElement("DateRange", () => require("../src").DateRange);
     template: `
     <StackLayout class="page" height="100%" backgroundColor="#ccc">
     <StackLayout height="10%">
-       <Button text="Test Btn"  (tap)="test($event)"></Button>
+       <Button text="Test Btn" (tap)="selectedDate($event)"></Button>
     </StackLayout>
      <StackLayout> 
        <DateRange  #elm> </DateRange> 
@@ -22,6 +21,7 @@ registerElement("DateRange", () => require("../src").DateRange);
 export class DateRangeComponent implements OnInit {
     // @ts-ignore
     @ViewChild('elm', {static: true}) elm: DateRange;
+    @Output() onSelectedDate: EventEmitter<any> = new EventEmitter<any>();
     private _androidViewId: number;
     nativeViewProtected: any;
 
@@ -30,10 +30,11 @@ export class DateRangeComponent implements OnInit {
     }
     ngOnInit(): void {
     }
-    test($event) {
+
+    selectedDate($event) {
         // @ts-ignore
-        console.log(this.elm.nativeElement.getSelectedValue())
-      //  console.log(this.elm)
+        const dates = this.elm.nativeElement.getSelectedValue();
+        this.onSelectedDate.emit(dates)
      }
 }
 
