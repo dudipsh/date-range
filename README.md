@@ -1,12 +1,13 @@
 # Your Plugin Name
 #### Nativescript Date Range
 Date Range plugin for angular support only for Android!
-![alt text](images/dateRange.PNG)
+
+![alt text](https://github.com/dudipsh/date-range/blob/master/images/dateRange.PNG)
 
 ## Installation
 
 ```javascript
-npm install nativescript-date-range-ui --save
+npm i nativescript-ui-date-range --save
 ```
 
 ## Usage 

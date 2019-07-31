@@ -1,7 +1,7 @@
 {
 	"name": "nativescript-ui-date-range",
-	"version": "1.0.0",
-	"description": "Your awesome NativeScript plugin.",
+	"version": "1.0.1",
+	"description": "NativeScript Date Range plugin.",
 	"main": "date-range",
 	"typings": "index.d.ts",
 	"nativescript": {
