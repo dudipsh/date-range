@@ -1,7 +1,7 @@
 import {registerElement} from 'nativescript-angular/element-registry';
 import {Component, OnInit, ViewChild, NgModule,  EventEmitter, Output, Input} from "@angular/core";
-import {DateRange} from "../src";
-registerElement("DateRange", () => require("../src").DateRange);
+import {DateRange} from "../";
+registerElement("DateRange", () => require("../").DateRange);
 
 @Component({
     selector: "date-range-component",

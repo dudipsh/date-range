@@ -1,9 +1,10 @@
 {
-  "name": "nativescript-publish",
+  "name": "nativescript-ui-date-range",
   "version": "1.0.4",
   "description": "Publish helper",
   "devDependencies": {
-    "ncp": "^2.0.0",
+    "@angular/core": "~8.0.0",
+    "nativescript-angular": "^8.0.2",
     "rimraf": "^2.5.0"
   }
 }
