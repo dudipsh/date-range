@@ -6,7 +6,7 @@ Date Range plugin for angular support only for Android!
 ## Installation
 
 ```javascript
-npm install nativescript-date-range --save
+npm install nativescript-date-range-ui --save
 ```
 
 ## Usage 
