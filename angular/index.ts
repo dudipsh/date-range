@@ -48,6 +48,3 @@ export class DateRangeComponent implements OnInit {
 
 export class DateRangeModule {
 }
-
-
-// registerElement("DateRange", () => require("./index").DateRangeComponent)
