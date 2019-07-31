@@ -6,4 +6,8 @@
 
 
 </StackLayout>
-<date-range-component (onSelectedDate)="test($event)"></date-range-component>
+<date-range-component
+        [titleText]="'Please selected start and end date'"
+        [buttonText]="'Save'"
+        (onSelectedDate)="test($event)">
+</date-range-component>
