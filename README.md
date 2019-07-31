@@ -2,7 +2,7 @@
 #### Nativescript Date Range
 Date Range plugin for angular support only for Android!
 
-![alt text](https://github.com/dudipsh/date-range/blob/master/images/dateRange.PNG)
+![nativesceipt date range](https://raw.githubusercontent.com/dudipsh/date-range/master/images/dateRange.PNG)
 
 ## Installation
 
