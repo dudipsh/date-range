@@ -1,7 +1,7 @@
 import {Component, OnInit, ViewChild} from "@angular/core";
 import {DateRange} from 'nativescript-date-range';
 import {registerElement} from "nativescript-angular";
-registerElement("DateRange", () => require("nativescript-date-range").DateRange);
+// registerElement("DateRange", () => require("nativescript-date-range").DateRange);
 
   @Component({
     selector: "Home",
