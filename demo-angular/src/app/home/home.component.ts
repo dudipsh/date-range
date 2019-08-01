@@ -6,7 +6,7 @@ import {Component, OnInit, ViewChild} from "@angular/core";
     templateUrl: "./home.component.html"
 })
 export class HomeComponent implements OnInit {
-
+    selectedDates ;
     constructor() {
     }
 
@@ -15,6 +15,8 @@ export class HomeComponent implements OnInit {
 
     public onSelectedDate($event) {
         console.log($event);
+        this.selectedDates = $event;
+        alert(this.selectedDates)
     }
 }
 

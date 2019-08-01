@@ -72,7 +72,14 @@ export class DateRangeComponent implements OnInit {
     selectedDate($event) {
         // @ts-ignore
         const dates = this.elm.nativeElement.getSelectedValue();
-        this.onSelectedDate.emit(dates);
+        if (dates) {
+            const toArr = dates.split(',');
+            if (toArr.length > 2) {
+                const startDate = toArr[0].replace('[', '');
+                const endDate = toArr[toArr.length - 1].replace(']', '');
+                this.onSelectedDate.emit({startDate, endDate});
+            }
+        }
     }
 }
 

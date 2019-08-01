@@ -1,4 +1,4 @@
-import { OnInit, EventEmitter } from "@angular/core";
+import { OnInit, EventEmitter } from '@angular/core';
 import { DateRange } from "../";
 export declare class DateRangeComponent implements OnInit {
     titleText: any;
