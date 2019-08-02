@@ -2,6 +2,7 @@ import { Common } from './date-range.common';
 // import {DateRangeModule} from './angular';
 // export * from './angular';
 export declare class DateRange extends Common {
+    [x: string]: any;
   // define your typings manually
   // or..
   // take the ios or android .d.ts files and copy/paste them here
@@ -10,6 +11,9 @@ export declare class DateRange extends Common {
     calendarView: any;
     createNativeView(): any;
     public getSelectedValue(): any;
+    public showOnlyFutureDates(): any;
+    public showLastYear(): any;
+    public showLastYear(): any;
     initNativeView(): void;
     _emit(event);
 }

@@ -1,13 +1,16 @@
 <ActionBar class="action-bar">
-    <Label class="action-bar-title" text="d"></Label>
+    <Label class="action-bar-title" text="Test Button" (tap)="test()"></Label>
 </ActionBar>
 
 <StackLayout >
+    <Button text="Show Last Year" (tap)="showLastYear()"></Button>
+
+    <Button text="Show Only Future Dates" (tap)="showOnlyFutureDates()"></Button>
 
 
-</StackLayout>
-<date-range-component
+<date-range-component #dr
         [titleText]="'Please select leave and return dates'"
         [buttonText]="'Save'"
         (onSelectedDate)="onSelectedDate($event)">
 </date-range-component>
+</StackLayout>

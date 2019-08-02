@@ -10,6 +10,8 @@ export declare class DateRangeComponent implements OnInit {
     constructor();
     ngOnInit(): void;
     selectedDate($event: any): void;
+    showOnlyFutureDates(): void;
+    showLastYear(): void;
 }
 export declare class DateRangeModule {
 }

@@ -22,7 +22,7 @@ registerElement("DateRange", () => require("..").DateRange);
                             <DateRange #elm></DateRange>
                         </StackLayout>
                     </AbsoluteLayout>
-                    <AbsoluteLayout height="15%" width="100%">
+                    <AbsoluteLayout height="15%" width="100%" *ngIf="buttonText">
                         <StackLayout width="100%" height="90%">
                             <StackLayout height="100%" width="90%" top="8%">
                                 <Button color="white" class="oval" backgroundColor="#f49e4b" [text]="buttonText"
@@ -72,14 +72,24 @@ export class DateRangeComponent implements OnInit {
     selectedDate($event) {
         // @ts-ignore
         const dates = this.elm.nativeElement.getSelectedValue();
-        if (dates) {
-            const toArr = dates.split(',');
-            if (toArr.length > 2) {
+        if (dates.toString()) {
+            const toArr = dates.toString().split(',');
+            if (toArr.length >= 2) {
                 const startDate = toArr[0].replace('[', '');
                 const endDate = toArr[toArr.length - 1].replace(']', '');
                 this.onSelectedDate.emit({startDate, endDate});
+            } else {
+                this.onSelectedDate.emit({startDate: dates.toString()});
             }
         }
+    }
+
+    showOnlyFutureDates() {
+        this.elm.nativeElement.showOnlyFutureDates();
+    }
+
+    showLastYear() {
+        this.elm.nativeElement.initCalendar();
     }
 }
 

@@ -30,6 +30,19 @@ import {DateRangeComponent, DateRangeModule} from "nativescript-date-range/angul
 </date-range-component>
 ```
 
+## API
+```typescript
+@ViewChild('dr', {static: false}) dr: any;
+
+this.dr.showOnlyFutureDates(): void
+this.dr.showLastYear(): void
+this.dr.selectedDate(): => {startDate, endDate}
+
+```
+
+
+
 ## License
+
 
 Apache License Version 2.0, January 2004

@@ -1,4 +1,5 @@
-import {Component, OnInit, ViewChild} from "@angular/core";
+import {Component, ElementRef, OnInit, ViewChild} from "@angular/core";
+import {View} from "tns-core-modules/ui/core/view";
 
 @Component({
     selector: "Home",
@@ -6,6 +7,7 @@ import {Component, OnInit, ViewChild} from "@angular/core";
     templateUrl: "./home.component.html"
 })
 export class HomeComponent implements OnInit {
+    @ViewChild('dr', {static: false}) dr: any;
     selectedDates ;
     constructor() {
     }
@@ -18,5 +20,14 @@ export class HomeComponent implements OnInit {
         this.selectedDates = $event;
         alert(this.selectedDates)
     }
+
+    showOnlyFutureDates() {
+        this.dr.showOnlyFutureDates();
+    }
+
+    showLastYear() {
+        this.dr.showLastYear();
+    }
+
 }
 
