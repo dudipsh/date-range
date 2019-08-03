@@ -1,13 +1,16 @@
 <Page class="page"
-    navigatingTo="onNavigatingTo" 
+    navigatingTo="onNavigatingTo"
+      xmlns:Calendar="nativescript-date-range"
     xmlns="http://schemas.nativescript.org/tns.xsd">
     
     <ActionBar class="action-bar">
         <Label class="action-bar-title" text="Home"></Label>
     </ActionBar>
 
-    <GridLayout>
+    <StackLayout>
 
+        <Calendar:DateRange>
+        </Calendar:DateRange>
         <!-- Add your page content here -->
-    </GridLayout>
+    </StackLayout>
 </Page>
