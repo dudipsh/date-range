@@ -1,15 +1,15 @@
-import { OnInit, EventEmitter } from "@angular/core";
-import { DateRange } from "../";
+import { OnInit, EventEmitter, ElementRef } from '@angular/core';
 export declare class DateRangeComponent implements OnInit {
+    dateRange: ElementRef;
     titleText: any;
     buttonText: any;
-    elm: DateRange;
     onSelectedDate: EventEmitter<any>;
     private _androidViewId;
     nativeViewProtected: any;
     constructor();
     ngOnInit(): void;
     selectedDate($event: any): void;
+    getSelectedValue(): any;
     showOnlyFutureDates(): void;
     showLastYear(): void;
 }

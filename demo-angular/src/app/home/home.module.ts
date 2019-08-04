@@ -3,7 +3,11 @@ import { NativeScriptCommonModule } from "nativescript-angular/common";
 
 import { HomeRoutingModule } from "./home-routing.module";
 import { HomeComponent } from "./home.component";
-import {DateRangeModule} from "../../../../src/angular";
+// import {DateRangeModule, DateRangeComponent} from "nativescript-date-range/angular";
+import {DateRangeComponent, DateRangeModule} from "../../../../src/angular/index";
+
+// import {DateRangeModule} from "nativescript-date-range/angular";
+// import {DateRangeComponent} from "nativescript-date-range";
 // import {DateRangeComponent, DateRangeModule} from "../../../../angular/index";
 
 
