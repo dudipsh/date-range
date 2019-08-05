@@ -10,26 +10,9 @@ registerElement("DateRange", () => require("..").DateRange);
     selector: "date-range-component",
     template: `
         <StackLayout class="date-range-calendar-container">
-            <StackLayout height="50" width="100%">
-                <StackLayout>
-                    <Label class="text-title text-center" [text]="titleText"></Label>
-                </StackLayout>
-            </StackLayout>
             <StackLayout>
-                <StackLayout height="100%" width="100%">
-                    <AbsoluteLayout height="85%" width="100%">
-                        <StackLayout height="100%" width="100%" >
-                            <DateRange #dateRange ></DateRange>
-                        </StackLayout>
-                    </AbsoluteLayout>
-                    <AbsoluteLayout height="15%" width="100%" *ngIf="buttonText">
-                        <StackLayout width="100%" height="90%">
-                            <StackLayout height="100%" width="90%" top="8%">
-                                <Button color="white" class="oval" backgroundColor="#f49e4b" [text]="buttonText"
-                                        (tap)="selectedDate($event)"></Button>
-                            </StackLayout>
-                        </StackLayout>
-                    </AbsoluteLayout>
+                <StackLayout height="100%" width="100%" >
+                    <DateRange #dateRange ></DateRange>
                 </StackLayout>
             </StackLayout>
         </StackLayout>
@@ -57,8 +40,6 @@ export class DateRangeComponent implements OnInit {
     @ViewChild('dateRange', {static: false}) dateRange: ElementRef;
 
     // @ts-ignore
-    @Input() titleText;
-    @Input() buttonText;
     @Output() onSelectedDate: EventEmitter<any> = new EventEmitter<any>();
     private _androidViewId: number;
     nativeViewProtected: any;

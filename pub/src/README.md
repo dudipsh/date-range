@@ -23,10 +23,7 @@ import {DateRangeComponent, DateRangeModule} from "nativescript-date-range/angul
 
 #### home.component.html
 ```html
-<date-range-component
-        [titleText]="'Please select leave and return dates'"
-        [buttonText]="'Save'"
-        (onSelectedDate)="onSelectedDate($event)">
+<date-range-component>
 </date-range-component>
 ```
 

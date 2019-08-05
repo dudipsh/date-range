@@ -1,6 +1,6 @@
 {
 	"name": "nativescript-ui-date-range",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"description": "NativeScript Date Range plugin.",
 	"main": "date-range",
 	"typings": "index.d.ts",
@@ -38,8 +38,8 @@
 		"iOS"
 	],
 	"author": {
-		"name": "Your Name",
-		"email": "youremail@yourdomain.com"
+		"name": "Dudi",
+		"email": "dudipsh@gmail.com"
 	},
 	"bugs": {
 		"url": "https://github.com/dudipsh/date-range/issues"

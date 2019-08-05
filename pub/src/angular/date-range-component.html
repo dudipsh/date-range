@@ -1,19 +1,8 @@
 
 <StackLayout class="date-range-calendar-container">
     <StackLayout>
-            <StackLayout height="100%"  width="100%"  >
-                <AbsoluteLayout [height]="(buttonText) ? '85%' : '100%'"  height="85%" width="100%" >
-                    <StackLayout   height="100%"  width="100%" >
-                    <DateRange  #elm  > </DateRange>
-                    </StackLayout>
-                </AbsoluteLayout>
-                <AbsoluteLayout   height="15%" width="100%"  *ngIf="buttonText">
-                    <StackLayout  width="100%"  height="90%">
-                        <StackLayout height="100%" width="90%" top="8%" >
-                            <Button color="white" class="oval" backgroundColor="#f49e4b" [text]="buttonText" (tap)="selectedDate($event)"></Button>
-                        </StackLayout>
-                    </StackLayout>
-                </AbsoluteLayout>
-            </StackLayout>
+        <StackLayout height="100%" width="100%" >
+            <DateRange #dateRange ></DateRange>
+        </StackLayout>
     </StackLayout>
 </StackLayout>
